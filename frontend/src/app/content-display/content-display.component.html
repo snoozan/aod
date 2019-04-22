@@ -1,0 +1,13 @@
+<div class="item"
+     fxFlex="10 0 0"
+     [ngStyle.gt-sm]="{'margin.px': 32, 'width': '100%'}"
+     fxFlex.lt-md="0 0 100%"
+     [ngStyle.lt-md]="{'margin-bottom.px': 10}"
+     (click)="toggleDisplay()"
+     >
+  <div class="item-content" >
+      <p>{{ content.title }}</p>
+  </div>
+
+    <p>{{ content.text }}</p>
+</div>

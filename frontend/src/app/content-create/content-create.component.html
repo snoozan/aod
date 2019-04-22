@@ -1,0 +1,17 @@
+<div class="container">
+        <form>
+          <ul class="flex-outer">
+            <li>
+              <label for="Title">Title</label>
+              <input type="text" placeholder="A title for your piece..." #title>
+            </li>
+            <li>
+              <label for="Text">Content</label>
+              <textarea rows="6" placeholder="Enter your thoughts here.." #text></textarea>
+            </li>
+            <li>
+              <button type="submit" (click)="post(title.value, text.value)">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </div>

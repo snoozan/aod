@@ -1,0 +1,20 @@
+<div class="main-container layout3">
+  <div 
+    class="grid-content"
+    fxLayout="row wrap" 
+    fxLayout.lt-sm="column" 
+    fxLayoutGap="32px" 
+    fxLayoutAlign="flex-start">
+      <div 
+         fxLayout="column wrap"
+         [ngStyle]="{'max-height.px': 700}"
+         fxLayout.lt-md="row wrap"
+         [ngStyle.lt-md]="{'overflow': 'scroll'}">    
+
+      <div *ngFor="let content of contents;">
+        <app-content-display [content]=content [fullView]="fullView"></app-content-display>
+        <app-content-full-view [content]=content #fullView></app-content-full-view>
+      </div>
+    </div>
+  </div>
+</div>

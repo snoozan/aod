@@ -1,0 +1,51 @@
+<div 
+    fxLayout="row wrap" 
+    fxLayout.lt-sm="column" 
+    fxLayoutGap="32px" 
+    fxLayoutAlign="flex-start">
+    <div fxLayout="column wrap" fxLayout.xs="row"
+         [ngStyle.lt-md]="{'overflow': 'scroll'}">    
+    
+                <button (click)="onExit()">Exit</button>
+                <div  
+                fxFlex="10 0 0"
+                [ngStyle.gt-sm]="{'margin.px': 0, 'width': '130%'}"
+                fxFlex.lt-md="0 0 100%"
+                [ngStyle.lt-md]="{'margin-bottom.px': 5}">
+                    <div class="content-title">
+                    {{ content.title }}
+                    </div>
+                </div>
+                <div  
+                fxFlex="10 0 0"
+                [ngStyle.gt-sm]="{'margin.px': 0, 'width': '130%'}"
+                fxFlex.lt-md="0 0 100%"
+                [ngStyle.lt-md]="{'margin-bottom.px': 5}">
+                    <div class="content-text">
+                    {{ content.text }}
+                    </div>
+                </div>
+                <div  
+                fxFlex="10 0 0"
+                [ngStyle.gt-sm]="{'margin.px': 0, 'width': '130%'}"
+                fxFlex.lt-md="0 0 100%"
+                [ngStyle.lt-md]="{'margin-bottom.px': 5}">
+                    <label>Post a reply:</label>
+                        <textarea #response></textarea>
+                    <button class="big-button" (click)="reply(response.value); response.value=''">
+                    Submit</button>
+                </div>
+      <div *ngFor="let reply of replies">
+                <div  
+                fxFlex="10 0 0"
+                [ngStyle.gt-sm]="{'margin.px': 0, 'width': '130%'}"
+                fxFlex.lt-md="0 0 100%"
+                [ngStyle.lt-md]="{'margin-bottom.px': 5}">
+                    <div class="content-text">
+                        <div class="timestamp">{{getDate(reply.createdAt)}}</div>
+                        <div class="reply">{{reply.text}}</div>
+                    </div>
+                </div>
+    </div>
+    </div>
+</div>
