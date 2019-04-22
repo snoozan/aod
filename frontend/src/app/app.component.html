@@ -1,4 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <div class="main-container">
     <div id="gridWrapper">
@@ -15,25 +14,46 @@
       <p class="desc">Wojnarowicz died in 1992 at the age of 37 in New York City from AIDS related complications.</p>
 
       <p class="desc" id="instructions">To interact with the timeline below, click through the images surrounding Wojnarowicz for a description of his work through the different periods of his life.</p>
-    <!-- <div class="arrow">
+      
+    <div class="arrow">
         <a href="#mainContent">
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.89 16.58"><defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#000;stroke-miterlimit:10;}.cls-2{stroke:#ce3b28;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>Untitled-1</title><path class="cls-1" d="M82.68,1.8" transform="translate(-27.06 -16.71)"/><polyline class="cls-2" points="0.54 0.54 22.94 16.04 45.34 0.54"/></svg>
         </a>
-    </div>-->
-    <div id="mainContent">
-            <iframe
-            src="https://marvelapp.com/43ic993?emb=1&iosapp=false&frameless=false" 
-            allowTransparency="true" 
-            frameborder="0" 
-            class="mainWork">
+    </div>
 
-        </iframe>
+    <div id="bgContent">
+      <iframe
+        src="https://marvelapp.com/8e7c57d?emb=1&iosapp=false&frameless=false"
+        allowTransparency="true" 
+        frameborder="0" 
+        class="mainWork">
+      </iframe>
     </div>
+      
+    <div id="mainContent">
+      <iframe
+        src="https://marvelapp.com/43ic993?emb=1&iosapp=false&frameless=false" 
+        allowTransparency="true" 
+        frameborder="0" 
+        class="mainWork">
+      </iframe>
+    </div>
+
+    <div id="impactContent">
+      <iframe
+        src="https://marvelapp.com/43ic993?emb=1&iosapp=false&frameless=false" 
+        allowTransparency="true" 
+        frameborder="0" 
+        class="mainWork">
+      </iframe>
+    </div>
+    
+    <app-content-create class="responsein" [grid]="grid"></app-content-create>
      <app-content-grid #grid></app-content-grid>
-     <app-content-create [grid]="grid"></app-content-create>
     </div>
+
     <div id="credit">
-            <h2 class="sub">Created by Anna Vernacchio, Emily Frebowitz, and Liza Comley</h2>
+            <h2 class="sub">Created by Anna Vernacchio, Emily Frebowitz, Liza Comley & Susan Lunn</h2>
 
             <h2 class="sub">Made for the Art of Dying with Jessica Lieberman</h2>
     </div>
