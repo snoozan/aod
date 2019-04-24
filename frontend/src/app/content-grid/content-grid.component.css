@@ -7,14 +7,12 @@
     scroll-behavior: smooth;
   }
 
-  
   .main-container p {
     font-size: 12px;
     text-align: center;
   }
   
   .grid-content {
-    background-color: #bdb8b852;
     padding: 30px;
     border-radius: 3px;
     margin-bottom: 10px;

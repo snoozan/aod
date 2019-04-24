@@ -1,7 +1,7 @@
 .container {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px 100px;
   }
   
   .container * {
@@ -47,6 +47,7 @@
   .flex-outer li p {
     flex: 1 0 120px;
     max-width: 220px;
+    color: #ffffff;
   }
   
   .flex-outer > li > label + *,
@@ -60,6 +61,7 @@
   
   .flex-outer li input:not([type='checkbox']),
   .flex-outer li textarea {
+    border-radius: 3px;
     padding: 15px;
     border: none;
   }

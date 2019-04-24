@@ -31,6 +31,11 @@ export class ContentGridComponent implements OnInit {
         .subscribe(contents => this.contents = contents);
     }
 
+    
+
+
+    
+
     @ViewChild(LayoutDirective)
     layoutDirective: FlexDirective;
   

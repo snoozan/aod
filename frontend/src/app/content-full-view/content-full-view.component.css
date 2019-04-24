@@ -8,10 +8,10 @@
     scroll-behavior: smooth;
     position: absolute;
     width: 50%;
-    height: 50%;
     overflow: scroll;
     background-color: #9e9196;
     border-radius: 3px;
+    cursor: none;
   }
 :host.is-open {
     display: block;
